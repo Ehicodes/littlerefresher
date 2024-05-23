@@ -1,0 +1,134 @@
+.navigation{
+    width: 100%;
+  display: flex;
+  padding: 1.5rem;
+  align-items: center;
+  justify-content: space-between;
+  @media only  screen and (max-width: $second-mq) {
+       position: relative;
+  }
+  @media only  screen and (max-width: $fourth-mq) {
+    padding: .3rem;
+  }
+  &__logo{
+    width: 14rem;
+    cursor: pointer;
+    @media only  screen and (max-width: $third-mq) {
+      width: 12rem;
+    }
+  }
+  &__wrapper{
+      list-style: none;
+      width: 100%;
+      text-align: right;
+      padding-right: 10rem;
+     
+      @media only  screen and (max-width: $second-mq) {
+       position: absolute;
+       left: -2rem;
+       top: -30rem;     
+        width: 60%;
+        text-align: center;
+        padding-right: 0;
+        z-index: 1000;
+        background-color: #f5168d7c;
+        transition: all 1s ease-in-out;
+   }
+  }
+  &__list{
+    display: inline-block;
+    @media only  screen and (max-width: $second-mq) {
+      display: block;
+      margin: 1.3rem;
+        }
+    &:not(:last-child){
+      margin-right: 2rem;
+    }
+  }
+  &__link{
+    font-size: 1.4rem;
+    color: #fff;
+    letter-spacing: .3px;
+    text-decoration: none;
+    transition: color .3s;
+    &:hover{
+      color: #f5168d;
+    }
+  }
+  &__checkbox:checked ~ &__wrapper{
+    top: 6rem;
+  }
+} 
+
+.btn{
+  color: #fff;
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+  padding: .5rem 1rem;
+  border-radius: .2rem;
+  border: 0;
+  outline: none;
+  font-weight: 500;
+  cursor: pointer;
+  background-color: #f5168d;
+  @media only  screen and (max-width: $third-mq) {
+padding: .3rem .8rem;
+
+  }
+}
+
+.flight-img{
+  width: 2rem;
+  margin-right: .5rem;
+}
+
+.content{
+  max-width:  50rem;
+  margin-top: 12rem;
+//   @media only  screen and (max-width: $second-mq) {
+// margin-top: 10rem;
+//   }
+  color: #fff;
+  &__header{
+    font-size: 5rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+    @media only  screen and (max-width: $third-mq) {
+     font-size: 3rem;
+        }
+  }
+  &__paragraph{
+    font-size: 1.4rem;
+    font-weight: 100;
+    line-height: 1.4;
+    color: #ffffffc9;
+    letter-spacing: .1rem;
+    @media only  screen and (max-width: $third-mq) {
+      font-size: 1.3rem;
+         }
+  }
+  &__form{
+    display: flex;
+    align-items: center;
+    padding: .7rem;
+    border-radius: .4rem;
+    margin-top: 2rem;
+    background-color: #fff;
+    @media only  screen and (max-width: $third-mq) {
+      padding: .4rem;
+     }
+    }
+    & input{
+      width: 100%;
+      border: 0;
+      outline: none;
+      font-size: 1.4rem;
+      padding-left: .5rem;
+       color: #222;
+      letter-spacing: .1rem;
+    }
+    & .btn{
+      padding: .8em 1.6rem;
+    }
+}

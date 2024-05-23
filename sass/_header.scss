@@ -1,0 +1,15 @@
+ .explore{
+    width: 100%;
+    min-height: 100vh;
+    padding: 10px 8%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: linear-gradient(rgba(9, 0, 77, 0.65), rgba(9,0,77, 0.65)), url(/pictures/background.png);
+    border: 3px solid black;
+    @media only  screen and (max-width: $first-mq)   {
+       padding: 10px 2rem;
+    }
+    @media only  screen and (max-width: $fourth-mq) {
+      padding: 10px 1rem;
+    }
+ }
